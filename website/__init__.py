@@ -8,12 +8,13 @@ from flask_restful import Api
 
 def load_config(mode=os.environ.get('MODE')):
     """Выбор и загрузка конфигурации."""
-    print(mode)
     try:
         if mode:
             if 'prod' in mode.lower():
+                print(ProductionConfig)
                 return ProductionConfig
             elif 'dev' in mode.lower():
+                print(DevelopmentConfig)
                 return DevelopmentConfig
         else:
             return None
