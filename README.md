@@ -78,10 +78,10 @@ CMD ["python", "./run.py"]
 Для запуска веб-приложения в 2-х доступных конфигурациях необходимо:
 
 1. Для продуктивной части в элементах окружения используется MODE = dev
-и используется БД SQLite3
+и используется БД SQLite3 название файла БД (TestingProject.db)
 
 2. Для продуктивной части в элементах окружения используется MODE = prod 
-и используется БД [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+и используется БД [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) название БД (TestingProject)
 
 
 # Запуск веб-приложения в Docker
