@@ -5,22 +5,16 @@
 ## Описание тестового задания
 
 Реализовать api-сервис регистрации и авторизации пользователя.
-
 Сервис должен быть реализован с использованием микрофреймворка Flask для хранения информации используется  СУБД Postgres.
-
 В приложении должно быть предусмотрено 2 конфигурации для разработки (development) и для продуктовой версии (production), какую СУБД использовать для development на усмотрение Исполнителя.
-
 Реализовать не менее 2-х функций отображения (endpoint):
 
 1) Для регистрации где вносится ФИО, логин пользователя и задается пароль. После успешной регистрации в ответной части возвращается сообщение об успехе или ошибке связанной с дублированием логина. Логин д.б. уникальным.
 2) Для авторизации где задается логин и пароль. В ответной части возвращается JWT в котором должна быть закодированная информация содержащая логин пользователя.
 
 Все запросы и ответные сообщения передаются в формате json.
-
 Данные функции д.б. документированы по стандарту Open API.
-
 Проект разместить в репозитории gitlab.com по готовности направить ссылку на него.
-
 Проект должен быть достаточно документирован для его развертывания и запуска.
 
 # Начало установки
@@ -28,47 +22,21 @@
 ## Установка и запуск
 
 Для того что бы начать установку данного тестового задания, требуется установить:
-	1. [Python версии 3.11](https://www.python.org/downloads/release/python-3110/)
+
+1. [Python версии 3.11](https://www.python.org/downloads/release/python-3110/)
 
 Зависимости:
-	1. 
-	2. 
-	3. 
-	4. 
-	5. 
-
-
-- [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/test8714309/testing.git
-git branch -M main
-git push -uf origin main
+pip install 
+pip install 
+pip install 
+pip install 
+pip install 
 ```
 
-## Integrate with your tools
+## Создание БД
 
 - [ ] [Set up project integrations](https://gitlab.com/test8714309/testing/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
 ***
 

@@ -18,4 +18,4 @@ class ProductionConfig(Config):
 
 class DevelopmentConfig(Config):
     SECRET_KEY = 'Sm9obiBTY2hy_b2asdasdasdasd0ga2-lja3M_gYXNz'
-    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:2222@localhost:5432/TestingProject"
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:2222@192.168.1.103:5432/TestingProject"
