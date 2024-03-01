@@ -24,6 +24,10 @@
 Для того что бы начать установку данного тестового задания, требуется установить:
 
 1. [Python версии 3.11](https://www.python.org/downloads/release/python-3110/)
+2. [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+3. [Установка Docker](https://www.docker.com/)
+
+Пожалуйста проверьте что у Вас установлены обновления Windows(если на данной архитектуре будет сборка)
 
 Зависимости:
 ```
