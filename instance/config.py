@@ -10,7 +10,7 @@ class Config(object):
     TESTING = False
 
 class ProductionConfig(Config):
-    '''Создается в текущей скрипту директории'''
+    ''' Создается в текущей скрипту директории '''
     DEBUG = True
     TESTING = True
     SECRET_KEY = 'Sm9obasdasdasdasdasdasddiBTY2asdasda'
