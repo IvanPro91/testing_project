@@ -36,11 +36,8 @@ pip install psycopg2==2.9.6
 ```
 
 ## Базы данных
-
-1. Для продуктивной части в элементах окружения используется MODE = dev
-и используется БД SQLite3
-2. Для продуктивной части в элементах окружения используется MODE = prod 
-и используется БД [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+В данном примере используется локальная БД Postgresql, которая не устанавливается в Docker
+и SQLite3.
 
 ## Настройка базы данных Postgresql
 
@@ -59,6 +56,29 @@ listen_addresses = '*'		# what IP address(es) to listen on;
 ```
 
 ***
+
+# Настройка Docker файла
+```
+FROM python:3.9
+WORKDIR /testing_project
+ADD . /testing_project
+COPY requirements.txt ./
+RUN pip3 install -r requirements.txt
+ENV MODE=dev
+ENV FLASK_APP=run.py
+ENV FLASK_RUN_HOST=0.0.0.0
+EXPOSE 5000
+CMD ["python", "./run.py"]
+```
+
+Для запуска веб-приложения в 2-х доступных конфигурациях необходимо:
+
+1. Для продуктивной части в элементах окружения используется MODE = dev
+и используется БД SQLite3
+
+2. Для продуктивной части в элементах окружения используется MODE = prod 
+и используется БД [PostgreSQL 14](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
 
 # Запуск веб-приложения в Docker
 
